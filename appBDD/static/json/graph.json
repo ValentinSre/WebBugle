@@ -1,1 +1,0 @@
-{"nodes": [{"name": "Peter", "id": 1}, {"name": "Norman", "id": 2}, {"name": "Oscorp", "id": 3}], "links": [{"source": 1, "target": 2, "type": "KNOWS"}, {"source": 2, "target": 3, "type": "FOUNDED"}, {"source": 1, "target": 3, "type": "WORKS_AT"}}
