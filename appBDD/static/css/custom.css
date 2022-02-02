@@ -1,0 +1,267 @@
+.big-button {
+  color: #18BC9C;
+  border: 2px solid #18BC9C;
+  background-color: #fff;
+}
+header .intro-text .name {
+  font-size: 2.75em;
+}
+
+img.user_profile {
+  width: 200px;
+}
+
+#button_user_pic {
+  width: 51px;
+  margin: -10px 10px -10px -17px;
+}
+
+header img#button_user_pic {
+  display: inline;
+}
+
+footer hr.star-light:after {
+  background-color: #289244ff;
+}
+
+.card {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 20px;
+}
+
+.cardpage {
+  border: 2px solid #34a853ff;
+  border-radius: 10px;
+  padding: 20px;
+  color: #34a853ff;
+  background-color: #f3f3f3;
+}
+
+.button#page {
+  background-color: #34a853ff;
+  border: none;
+  color: white;
+  border-radius: 30px;
+}
+@media (min-width: 768px) {
+  .card #user-name {
+    margin-top: 34%;
+  }
+  h1 {
+    margin-top: 6%;
+  }
+}
+
+.blur {
+   color: transparent;
+   text-shadow: 0 0 10px rgba(255,255,255,1);
+}
+
+.navbar-custom {
+  padding: 10px;
+}
+
+header .container {
+  padding-top: 150px;
+}
+
+button.page {
+  background-color: #34a853ff;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+button.fenetre {
+  background-color: #34a853ff;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+button.quiz {
+  background-color: #34a853ff;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+input[type=text] {
+  width:100%;
+  margin:auto;
+  padding: 2px;
+  border-radius: 30px;
+  border: 1px solid rgba(49, 49, 53, 0.2);
+  box-shadow: 1px 1px 2px 1px rgba(49, 49, 53, 0.2);
+  background: white;
+  padding-left:10px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #34a853ff;
+  text-align: left;
+}
+
+div.fenetre {
+  width: 700px; 
+	margin:auto;
+	padding: 10px;
+	text-align: center;
+	border-radius: 12px;
+	color: #7c7c7c;
+	box-shadow: 2px 2px 2px 1px rgba(49, 49, 53, 0.2);
+	background: #f3f3f3ff;
+}
+
+div.research {
+  width: 600px; 
+	margin:auto;
+	padding: 2px;
+	border-radius: 30px;
+  border: 1px solid rgba(49, 49, 53, 0.2);
+	box-shadow: 1px 1px 2px 1px rgba(49, 49, 53, 0.2);
+  background: white;
+
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+	color: #90c45e;
+  text-align: left;
+  font-size: 2.5rem;
+}
+
+div.info {
+	margin:auto;
+	padding: 10px;
+	text-align: center;
+	border-radius: 15px;
+  border: 2px solid #90c45e;
+	color: #1c1c3d;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.1rem;
+	background: white;
+}
+
+div.logo {
+	text-align: center;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid #90c45e;
+	color: #90c45e;
+  font-size: 2.2rem;
+	background: white;
+}
+img.boutons {
+  float: left;
+  width: 30px;
+}
+
+div.fenetre-txt{
+  padding-left: 35px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+}
+
+
+h3.fenetre{
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #34a853;
+  text-align: left;
+  font-size: 2.1rem;
+  font-weight: bold;
+}
+
+p.fenetre{
+  font-family:"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-left: 3px;
+	color: #7c7c7c;
+  text-align: left;
+  font-size: 1.8rem;
+}
+
+@font-face {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.question{
+  font-size: 20px;
+  font-family : "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #34a853;
+  margin-bottom: 10px;
+}
+
+.answers {
+  margin-bottom: 20px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  text-align: left;
+  display: inline-block;
+}
+
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+
+.quiz-container{
+  position: relative;
+  height: 150px;
+  margin-top: 40px;
+}
+
+.titre{
+  font-size: 17px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1c1c3d;
+  font-weight: bolder;
+}
+
+.soustitre{
+  font-size: 16px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1c1c3d;  
+  padding-left: 20px;
+}
+
+.souspartie{
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: #7c7c7c;  
+  padding-left: 30px;
+}
+
+.partie{
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #34a853; 
+}
+
