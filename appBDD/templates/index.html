@@ -5,16 +5,38 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container">
-      <h1>NEW JERSEY : QUAND <br>EXPLOSION RIME AVEC ÉCLOSION</h1>
-      <h2>La nouvelle héroïne repérée à Jersey City pose déjà de <br>
+      <h1 id="h1">NEW JERSEY : QUAND <br>EXPLOSION RIME AVEC ÉCLOSION</h1>
+      <h2 id="h2">La nouvelle héroïne repérée à Jersey City pose déjà de <br>
         nombreuses questions : Amie ou ennemie ? Quelle est l'origine <br>
         de ses pouvoirs ? Va-t-elle rejoindre les Avengers ?</h2>
-      <a href="#jamesondirect" class="btn-get-started scrollto">Lire l'article</a>
+      <a href="" class="btn-get-started scrollto">Lire l'article</a>
     </div>
   </section><!-- End Hero -->
+  <script>
+    setTimeout(slide2, 8000)
 
+    function slide2(){
+      document.getElementById("hero").style.backgroundImage = "url(/static/img/msmarvel.JPEG)"
+      document.getElementById("h1").innerHTML = "HÉRITAGE : QUI POUR " + "<br>" + "SUCCÉDER À STEVE ROGERS ?"
+      document.getElementById("h2").innerHTML = "Le porte-bannière étoilé étant étrangement disparu, " + "<br>" +
+                                                "la question de sa succession se pose... Qui pourrait porter le" + "<br>" +
+                                                "bouclier ? Les rumeurs disent que quelqu'un en a déjà hérité !"
+      clearTimeout()
+      setTimeout(slide1, 8000)
+    }
+    
+    function slide1(){
+      document.getElementById("hero").style.backgroundImage = "url(/static/img/msmarvelG.JPEG)"
+      document.getElementById("h1").innerHTML = "NEW JERSEY : QUAND " + "<br>" + "EXPLOSION RIME AVEC ÉCLOSION"
+      document.getElementById("h2").innerHTML = "La nouvelle héroïne repérée à Jersey City pose déjà de" + "<br>" +
+                                                "nombreuses questions : Amie ou ennemie ? Quelle est l'origine" + "<br>" +
+                                                "de ses pouvoirs ? Va-t-elle rejoindre les Avengers ?"
+      clearTimeout()
+      setTimeout(slide2, 8000)
+    }
+    
+  </script>
   <main id="main">
-
 
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us">
