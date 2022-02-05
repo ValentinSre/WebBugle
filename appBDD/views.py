@@ -23,7 +23,11 @@ def tp2_par1_1():
 @app.route('/investigation')
 def investigation():
     return render_template('investigation.html')
-    
+
+@app.route('/investigation/droits-cinematographiques')
+def droitscine():
+    return render_template('/investigation/droitscine.html')
+
 @app.route('/tp2/part1-2')
 def tp2_par1_2():
     return render_template('/tp2/part1-2.html', tp=2, part=1)

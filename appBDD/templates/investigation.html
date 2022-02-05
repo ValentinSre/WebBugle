@@ -1,4 +1,3 @@
-
 {% extends 'base.html' %}
 
 {% block content %}
@@ -18,7 +17,7 @@
                 </div>
   
                 <h2 class="entry-title">
-                  <a href="#">Les droits cinématographiques</a>
+                  <a href="/investigation/droits-cinematographiques">Les droits cinématographiques</a>
                 </h2>
   
                 <div class="entry-meta">
@@ -36,7 +35,7 @@
                     Ce dossier est fait pour vous !
                   </p>
                   <div class="read-more">
-                    <a href="#">Lire l'article</a>
+                    <a href="/investigation/droits-cinematographiques">Lire l'article</a>
                   </div>
                 </div>
   
@@ -232,44 +231,7 @@
               </article><!-- End blog entry -->
             </div><!-- End blog entries list -->
   
-            <div class="col-lg-4">
-  
-              <div class="sidebar">
-                <h3 style="font-size: 25px;" class="sidebar-title">On en parle !</h3>
-                <div class="sidebar-item recent-posts">
-                  <div class="post-item clearfix">
-                    <img src="static/img/investigation/icones/propagandecaptain.webp" alt="">
-                    <h4><a href="#">Captain America, outil de propagande ou point Goldwin ultime ?</a></h4>
-                    <time datetime="2022-02-05">05 Fev, 2022</time>
-                  </div>
-  
-                  <div class="post-item clearfix">
-                    <img src="static/img/investigation/icones/jimshooter.webp" alt="">
-                    <h4><a href="#">"Pas de gays dans l'univers Marvel" selon le scénariste Jim Shooter !</a></h4>
-                    <time datetime="2022-02-05">05 Fev, 2022</time>
-                  </div>
-  
-                  <div class="post-item clearfix">
-                    <img src="static/img/investigation/icones/thingtrump.webp" alt="">
-                    <h4><a href="#">Une blague contre Trump effacée sans vergogne par les patrons de Marvel !</a></h4>
-                    <time datetime="2022-02-05">05 Fev, 2022</time>
-                  </div>
-                </div><!-- End sidebar recent posts-->
-
-                <h3 class="sidebar-title">Rechercher</h3>
-                <div class="sidebar-item search-form">
-                  <form action="">
-                    <input type="text">
-                    <button type="submit"><i class="bi bi-search"></i></button>
-                  </form>
-                </div><!-- End sidebar search formn-->
-    
-  
-                </div><!-- End sidebar recent posts-->
-  
-              </div><!-- End sidebar -->
-  
-            </div><!-- End blog sidebar -->
+            {% include '/investigation/onenparle.html' %}
   
           </div>
   
