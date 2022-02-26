@@ -15,25 +15,41 @@ app.config.from_object('config')
 from .utils import find_content
 import codecs
 
-@app.route('/investigation')
-def investigation():
-    return render_template('investigation.html')
-
-@app.route('/investigation/droits-cinematographiques')
-def droitscine():
-    return render_template('/investigation/droitscine.html')
-
-@app.route('/sciences')
-def sciences():
-    return render_template('/sciences.html')
-
-@app.route('/sciences/grandir-comme-giantman')
-def giantman():
-    return render_template('/sciences/giantman.html')
-
-#Accueil
+# Accueil
 @app.route('/')
 @app.route('/index/')
 def index():
     return render_template('index.html')
+
+# Page Investigation
+@app.route('/investigation')
+def investigation():
+    return render_template('investigation.html')
+
+# Page Droits cinématographiques (Investigation)
+@app.route('/investigation/droits-cinematographiques')
+def droitscine():
+    return render_template('/investigation/droitscine.html')
+
+# Page Evolution Marvel Comics (Investigation)
+@app.route('/investigation/evolution-marvelcomics')
+def evolution_marvelcomics():
+    return render_template('/investigation/evolutionmarvel.html')
+
+# Page Sciences
+@app.route('/sciences')
+def sciences():
+    return render_template('/sciences.html')
+
+# Page Sciences
+@app.route('/twitter')
+def twitter():
+    return render_template('/sites/twitter/accueil.html')
+
+# Page Grandir comme Giant-Man (Sciences)
+@app.route('/sciences/grandir-comme-giantman')
+def giantman():
+    return render_template('/sciences/giantman.html')
+
+
 

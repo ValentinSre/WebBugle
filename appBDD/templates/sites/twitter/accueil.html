@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treeter</title>
+    <!-- CSS File -->
+    <link href="{{ url_for('static', filename='css/twitter.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  </head>
+  <body>
+    <!-- sidebar starts -->
+    <div class="sidebar">
+      <div style="padding-left: 9px">
+        <img src="/static/img/sites/twitter/logo.PNG" style="width:45px; height: 45px;">
+      </div>
+      <div class="sidebarOption active">
+        <span class="material-icons"> home </span>
+        <h2>Accueil</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> search </span>
+        <h2>Explorer</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> notifications_none </span>
+        <h2>Notifications</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> mail_outline </span>
+        <h2>Messages</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> bookmark_border </span>
+        <h2>Signets</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> list_alt </span>
+        <h2>Listes</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> perm_identity </span>
+        <h2>Profil</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> more_horiz </span>
+        <h2>Plus</h2>
+      </div>
+      <button class="sidebar__tweet">Tweeter</button>
+    </div>
+
+    <div class="feed">
+      <div class="feed__header">
+        <h2>Accueil</h2>
+      </div>
+
+      <div class="tweetBox">
+        <form>
+          <div class="tweetbox__input">
+            <img
+              src="https://cdn.iconscout.com/icon/free/png-256/groot-1502862-1273077.png"
+              alt=""
+            />
+            <input type="text" placeholder="Quoi de neuf ?" />
+          </div>
+          <button class="tweetBox__tweetButton">Tweeter</button>
+        </form>
+      </div>
+
+      <div class="post">
+        <div class="post__avatar">
+          <img
+            src="https://cdn.iconscout.com/icon/free/png-256/groot-1502862-1273077.png"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <br>
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Groot
+                <span class="post__headerSpecial"><span class="material-icons post__badge"> verified </span>@gr00t</span>
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>Je s'appelle Groot. Je s'appelle Groot. Je s'appelle... Groot !</p>
+            </div>
+          </div>
+          <img
+            src="https://www.premiere.fr/sites/default/files/styles/scale_crop_1280x720/public/2018-04/montage_gardiens2bis.jpg"
+            alt=""
+          />
+          <div class="post__footer">
+            <span class="material-icons"> chat_bubble_outline </span>
+            <span class="material-icons"> repeat </span>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span>
+          </div>
+        </div>
+      </div>
+      <!-- post ends -->
+
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img src="https://cdn.iconscout.com/icon/free/png-256/groot-1502862-1273077.png" alt=""/>
+        </div>
+
+        <div class="post__body">
+          <br>
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Groot
+                <span class="post__headerSpecial"><span class="material-icons post__badge"> verified </span>@gr00t</span>
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>Je s'appelle Groot. Je s'appelle Groot, je s'appelle Groot, je 
+                <br>s'appelle Groot ! JE S'APPELLE GROOT !!!!</p>
+            </div>
+          </div>
+          <img
+            src="https://fr.web.img3.acsta.net/r_654_368/newsv7/16/09/06/17/22/009620.jpg"
+            alt=""
+          />
+          <div class="post__footer">
+            <span class="material-icons"> chat_bubble_outline </span>
+            <span class="material-icons"> repeat </span>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="widgets">
+      <div class="widgets__input">
+        <span class="material-icons widgets__searchIcon"> search </span>
+        <input type="text" placeholder="Recherche Twitter" />
+      </div>
+
+      <div class="widgets__widgetContainer">
+        <h2>Suggestions</h2>
+        
+      </div>
+    </div>
+  </body>
+</html>
