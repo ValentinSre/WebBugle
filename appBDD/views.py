@@ -46,6 +46,11 @@ def sciences():
 def twitter():
     return render_template('/sites/twitter/accueil.html')
 
+# Page Sciences
+@app.route('/profil')
+def twitter_profil():
+    return render_template('/sites/twitter/profil.html')
+
 # Page Grandir comme Giant-Man (Sciences)
 @app.route('/sciences/grandir-comme-giantman')
 def giantman():
