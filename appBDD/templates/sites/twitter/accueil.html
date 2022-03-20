@@ -9,6 +9,10 @@
     <link href="{{ url_for('static', filename='css/twitter.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
+    <link href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+
   </head>
   <body>
     <!-- sidebar starts -->
@@ -16,7 +20,7 @@
       <div style="padding-left: 9px">
         <img src="/static/img/sites/twitter/logo.PNG" style="width:45px; height: 45px;">
       </div>
-      <div class="sidebarOption active">
+      <div class="sidebarOption active" onclick="window.location.href = '/treeter'">
         <span class="material-icons"> home </span>
         <h2>Accueil</h2>
       </div>
@@ -46,7 +50,7 @@
         <h2>Listes</h2>
       </div>
 
-      <div class="sidebarOption">
+      <div class="sidebarOption"  onclick="window.location.href = '/treeter/thew4tcher'">
         <span class="material-icons"> perm_identity </span>
         <h2>Profil</h2>
       </div>
@@ -67,10 +71,10 @@
         <form>
           <div class="tweetbox__input">
             <img
-              src="https://cdn.iconscout.com/icon/free/png-256/groot-1502862-1273077.png"
+              src="/static/img/sites/twitter/profil/Uatu/ppTweet.png"
               alt=""
             />
-            <input type="text" placeholder="Quoi de neuf ?" />
+            <input type="text" placeholder="Quoi de neuf ? (un vrai Gardien ne treete pas)" />
           </div>
           <button class="tweetBox__tweetButton">Treeter</button>
         </form>
@@ -79,26 +83,30 @@
       <div class="post">
         <div class="post__avatar">
           <img
-            src="https://cdn.iconscout.com/icon/free/png-256/groot-1502862-1273077.png"
+            src="/static/img/sites/twitter/profil/BenUrich/ppTweet.png"
             alt=""
           />
         </div>
 
-        <div class="post__body">
+        <div class="post__body" onclick="window.location.href = '/treeter/urich4thetruth'">
           <br>
           <div class="post__header">
             <div class="post__headerText">
               <h3>
-                Groot
-                <span class="post__headerSpecial"><span class="material-icons post__badge"> verified </span>@gr00t</span>
+                Ben Urich
+                <span style="font-weight: lighter" class="post__headerSpecial"><span class="material-icons post__badge"> verified </span>@urich4thetruth</span>
               </h3>
             </div>
             <div class="post__headerDescription">
-              <p>Je s'appelle Groot. Je s'appelle Groot. Je s'appelle... Groot !</p>
+              <p>
+                Wilson Fisk a du sang sur les mains au sujet de ce qui se passe à 
+                <br>
+                l'international aujourd'hui. Réveillons-nous !
+              </p>
             </div>
           </div>
           <img
-            src="https://www.premiere.fr/sites/default/files/styles/scale_crop_1280x720/public/2018-04/montage_gardiens2bis.jpg"
+            src="https://i0.wp.com/www.universdescomics.com/wp-content/uploads/2021/02/wp3634542-scaled.jpg?ssl=1"
             alt=""
           />
           <div class="post__footer">
@@ -108,13 +116,16 @@
             <span class="material-icons"> publish </span>
           </div>
         </div>
-      </div>
-      <!-- post ends -->
+    </div>
 
-      <!-- post starts -->
-      <div class="post">
-        <div class="post__avatar">
-          <img src="https://cdn.iconscout.com/icon/free/png-256/groot-1502862-1273077.png" alt=""/>
+    <div class="retweet">
+      <p><i class="ri-repeat-fill"></i>  Ben Urich a retweeté</p>
+    </div>
+
+    <div class="post">
+
+        <div class="post__avatar">              
+          <img src="/static/img/sites/twitter/profil/Groot/ppTweet.png" alt=""/>
         </div>
 
         <div class="post__body">
@@ -123,7 +134,7 @@
             <div class="post__headerText">
               <h3>
                 Groot
-                <span class="post__headerSpecial"><span class="material-icons post__badge"> verified </span>@gr00t</span>
+                <span style="font-weight: lighter" class="post__headerSpecial"><span class="material-icons post__badge"> verified </span>@gr00t</span>
               </h3>
             </div>
             <div class="post__headerDescription">
@@ -142,7 +153,81 @@
             <span class="material-icons"> publish </span>
           </div>
         </div>
+    </div>
+
+    <div class="post" onclick="window.location.href = '/treeter/urich4thetruth'">
+      <div class="post__avatar">
+        <img
+          src="/static/img/sites/twitter/profil/BenUrich/ppTweet.png"
+          alt=""
+        />
       </div>
+
+      <div class="post__body">
+        <br>
+        <div class="post__header">
+          <div class="post__headerText">
+            <h3>
+              Ben Urich
+              <span style="font-weight: lighter" class="post__headerSpecial"><span class="material-icons post__badge"> verified </span>@urich4thetruth</span>
+            </h3>
+          </div>
+          <div class="post__headerDescription">
+            <p>
+              J'investigue en ce moment même sur un scandale qui pourrait faire 
+              <br>
+              grand bruit. 
+              <br>
+              <p style="color: #2b69e6; padding-top: 2px">#BlackPanther #ArabianKnight</p>
+            </p>
+          </div>
+        </div>
+        <div style='padding-top: 4px' class="post__footer">
+          <span class="material-icons"> chat_bubble_outline </span>
+          <span class="material-icons"> repeat </span>
+          <span class="material-icons"> favorite_border </span>
+          <span class="material-icons"> publish </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="post" onclick="window.location.href = '/treeter/urich4thetruth'">
+      <div class="post__avatar">
+        <img
+          src="/static/img/sites/twitter/profil/BenUrich/ppTweet.png"
+          alt=""
+        />
+      </div>
+
+      <div class="post__body">
+        <br>
+        <div class="post__header">
+          <div class="post__headerText">
+            <h3>
+              Ben Urich
+              <span style="font-weight: lighter" class="post__headerSpecial"><span class="material-icons post__badge"> verified </span>@urich4thetruth</span>
+            </h3>
+          </div>
+          <div class="post__headerDescription">
+            <p>
+              Je souhaiterais interviewer Spider-Man suite aux récentes 
+              <br>
+              allégations du maire Jameson. RT appréciés.
+            </p>
+          </div>
+        </div>
+        <img
+          src="https://townsquare.media/site/622/files/2016/05/RamosSpidey.png?w=980&q=75"
+          alt=""
+        />
+        <div class="post__footer">
+          <span class="material-icons"> chat_bubble_outline </span>
+          <span class="material-icons"> repeat </span>
+          <span class="material-icons"> favorite_border </span>
+          <span class="material-icons"> publish </span>
+        </div>
+      </div>
+    </div>
     </div>
 
     <div class="widgets">

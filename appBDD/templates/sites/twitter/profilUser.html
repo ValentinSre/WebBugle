@@ -32,7 +32,7 @@
       <div style="padding-left: 9px">
         <img src="/static/img/sites/twitter/logo.PNG" style="width:45px; height: 45px;" id="logo">
       </div>
-      <div class="sidebarOption"  onclick="window.location.href = '/twitter'">
+      <div class="sidebarOption"  onclick="window.location.href = '/treeter'">
         <span class="material-icons"> home </span>
         <h2>Accueil</h2>
       </div>
@@ -62,7 +62,7 @@
         <h2>Listes</h2>
       </div>
 
-      <div class="sidebarOption">
+      <div class="sidebarOption" onclick="window.location.href = '/treeter/profile'">
         <span class="material-icons"> perm_identity </span>
         <h2>Profil</h2>
       </div>
@@ -79,37 +79,29 @@
             <span class="material-icons"> arrow_back </span>
             <h2>Leo Fitz</h2><br><br>
         </div>
-        <div class="banniere">
+        <div class="banniere" style="background-image: url(/static/img/sites/twitter/profil/Uatu/banner.jpeg)">
             <div class="pp">
-                <img src="/static/img/sites/twitter/profil/pp.jpg" class="image-ronde"  id="pp">
+                <img src="/static/img/sites/twitter/profil/Uatu/pp.jpg" class="image-ronde"  id="pp">
             </div>
         </div>
-        <div class="iconsBar">
-            <div class="btn">
-                <span class="material-icons"> more_horiz </span>
-            </div>
-            <div class="btn">
-                <span class="material-icons"> mail_outline </span>
-            </div>
-            <div class="btn">
-                <button class="follow" id="follow"> Suivre </button>
-            </div>
+        <div class="profilBar">
+          <button class="editProfil" id="editProfil"> Éditer le profil </button>
         </div>
         <div class="info">
-            <h2>Leo Fitz</h2>
-            <h3 style="font-weight: lighter">@le0rigins</h3>
-            <p>Ceci est une bio sans émoji.</p>
+            <h2>Le Gardien</h2>
+            <h3 style="font-weight: lighter">@thew4tcher</h3>
+            <p>Je vois tout mais je n'interviens pas.</p>
             <div class="location">        
                 <span class="material-icons"> location_on </span>
-                <h4>en prépa / au cinéma</h4>
+                <h4>Lune</h4>
             </div>
-			<p><span><b>106</b> abonnements</span><span STYLE="padding:0 0 0 20px;"><b>58</b> abonnés</span></p>
+			<p><span><b>13</b> abonnements</span><span STYLE="padding:0 0 0 20px;"><b>41 963</b> abonnés</span></p>
         </div>
         <br>
         <div class="post"></div>
         <div class="menus">
-            <span style="border-bottom: 4px solid #0FC3FF; padding-bottom: 2px;"><b>Tweets</b></span>
-            <span id="menu1" style="border-bottom: 4px solid white; padding-bottom: 2px;">Tweets et réponses</span>
+            <span style="border-bottom: 4px solid #0FC3FF; padding-bottom: 2px;"><b>Treets</b></span>
+            <span id="menu1" style="border-bottom: 4px solid white; padding-bottom: 2px;">Treets et réponses</span>
             <span id="menu2" style="border-bottom: 4px solid white; padding-bottom: 2px;">Médias</span>
             <span id="menu3" style="border-bottom: 4px solid white; padding-bottom: 2px;">J'aime</span>
         </div>
@@ -118,7 +110,7 @@
         <div class="post">
             <div class="post__avatar">
               <img
-                src="https://cdn.iconscout.com/icon/free/png-256/groot-1502862-1273077.png"
+              src="/static/img/sites/twitter/profil/Uatu/ppTweet.png"
                 alt=""
               />
             </div>
@@ -128,50 +120,19 @@
               <div class="post__header">
                 <div class="post__headerText">
                   <h3>
-                    Groot
-                    <span style="font-weight: lighter" class="post__headerSpecial"><span class="material-icons post__badge"> verified </span>@gr00t</span>
+                    Le Gardien
+                    <span style="font-weight: lighter" class="post__headerSpecial"><span class="material-icons post__badge"> </span>@thew4tcher</span>
                   </h3>
                 </div>
                 <div class="post__headerDescription">
-                  <p>Je s'appelle Groot. Je s'appelle Groot. Je s'appelle... Groot !</p>
+                  <p>Je n'interviendrais pas.</p>
                 </div>
               </div>
               <img
-                src="https://www.premiere.fr/sites/default/files/styles/scale_crop_1280x720/public/2018-04/montage_gardiens2bis.jpg"
-                alt=""
+              src="https://nigeriapenng.com/wp-content/uploads/2021/07/Marvel-What-If-Watcher-Uatu-Concept-Art-1.jpg"
+              alt=""
               />
-              <div class="post__footer">
-                <span class="material-icons"> chat_bubble_outline </span>
-                <span class="material-icons"> repeat </span>
-                <span class="material-icons"> favorite_border </span>
-                <span class="material-icons"> publish </span>
-              </div>
-            </div>
-        </div>
-        <div class="post">
-            <div class="post__avatar">
-              <img src="https://cdn.iconscout.com/icon/free/png-256/groot-1502862-1273077.png" alt=""/>
-            </div>
-    
-            <div class="post__body">
-              <br>
-              <div class="post__header">
-                <div class="post__headerText">
-                  <h3>
-                    Groot
-                    <span style="font-weight: lighter" class="post__headerSpecial"><span class="material-icons post__badge"> verified </span>@gr00t</span>
-                  </h3>
-                </div>
-                <div class="post__headerDescription">
-                  <p>Je s'appelle Groot. Je s'appelle Groot, je s'appelle Groot, je 
-                    <br>s'appelle Groot ! JE S'APPELLE GROOT !!!!</p>
-                </div>
-              </div>
-              <img
-                src="https://fr.web.img3.acsta.net/r_654_368/newsv7/16/09/06/17/22/009620.jpg"
-                alt=""
-              />
-              <div class="post__footer">
+              <div  style='padding-top: 4px' class="post__footer">
                 <span class="material-icons"> chat_bubble_outline </span>
                 <span class="material-icons"> repeat </span>
                 <span class="material-icons"> favorite_border </span>
@@ -190,7 +151,22 @@
 
       <div class="widgets__widgetContainer" id="suggestions">
         <h2>Suggestions</h2>
-        <button onclick="myFunction()"> Test </button>
+        <div class="box" onclick="window.location.href = '/treeter/urich4thetruth'">
+          <div class="suggestion">
+            <img
+            src="/static/img/sites/twitter/profil/BenUrich/ppTweet.png"
+              alt=""
+            />
+          </div>
+          <div class="sugg">
+            <h2>Ben Urich</h2>
+            <h3 style="font-weight: lighter">@urich4thetruth</h3>
+          </div>
+          <div class="btn" style="padding-top: 22px; padding-left: 50px">
+            <button class="follow" id="follow" style="width: 90px; font-size: 14px"> Suivre </button>
+        </div>
+        </div>
+       <!-- <button onclick="myFunction()"> Test </button> -->
       </div>
 
       <script>
